@@ -1,4 +1,18 @@
 $(document).ready(function() {
+
+
+    var typed = new Typed('.typed', {
+        strings: ['Hello Ayvon Joseph Biji',
+            'You Can Find The Weather'
+        ],
+        smartBackspace: true,
+        loop: true,
+        typeSpeed: 50,
+
+    });
+
+
+
     $("#searchInput").on("keyup", function(e) {
         var cityname = e.target.value;
         const APIkey = "a4b1e4bae4f8705409a6a6ccacf4d8da";
